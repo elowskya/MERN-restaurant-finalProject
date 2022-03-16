@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "food_items",
+  "info": {
+    "name": "Food Item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "product": {
+      "via": "food_items",
+      "model": "product"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    }
+  }
+}
