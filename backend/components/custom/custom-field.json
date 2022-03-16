@@ -2,7 +2,7 @@
   "collectionName": "components_custom_custom_fields",
   "info": {
     "name": "Custom_field",
-    "icon": "archway"
+    "icon": "archway" 
   },
   "options": {},
   "attributes": {
