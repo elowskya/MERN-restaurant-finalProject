@@ -9,7 +9,8 @@ const ProductsList = ({ products }) => {
 <span>
 Search: &nbsp;
 <input value={filter} onChange={(e)=>{setFilter(e.target.value)}} style={{ width: '75px', padding: '5px' }} /> 
-</span><div className="m-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-8">
+</span>
+<div className="m-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-8">
     {products.filter((product)=> product.title.toLowerCase().includes(filter.toLowerCase())).map((_product) => (
         <div
           key={_product.id}
